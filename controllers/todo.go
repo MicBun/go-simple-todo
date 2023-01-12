@@ -18,7 +18,7 @@ type CreateTodoInput struct {
 // @Tags todos
 // @Accept  json
 // @Produce  json
-// @Param Authorization header string true "Bearer Token"
+// @Param Authorization header string true "Bearer Token. How to input in swagger: Bearer <token>"
 // @Security Bearer
 // @Success 200 {array} models.Todo
 // @Failure 404 {object} string
@@ -49,7 +49,7 @@ func GetUserTodos(c *gin.Context) {
 // @Accept  json
 // @Produce  json
 // @Param  todo body CreateTodoInput  true "Todo object"
-// @Param Authorization header string true "Bearer Token"
+// @Param Authorization header string true "Bearer Token. How to input in swagger: Bearer <token>"
 // @Success 200 {object} models.Todo
 // @Failure 400 {object} map[string]interface{}
 // @Failure 401 {object} map[string]interface{}
@@ -82,7 +82,7 @@ func CreateTodo(c *gin.Context) {
 // @Accept  json
 // @Produce  json
 // @Param  id path int true "Todo ID"
-// @Param Authorization header string true "Bearer Token"
+// @Param Authorization header string true "Bearer Token. How to input in swagger: Bearer <token>"
 // @Success 200 {object} models.Todo
 // @Failure 400 {object} map[string]interface{}
 // @Failure 401 {object} map[string]interface{}
@@ -115,7 +115,7 @@ func CompleteTodo(c *gin.Context) {
 // @Accept  json
 // @Produce  json
 // @Param id path int true "Todo ID"
-// @Param Authorization header string true "Bearer Token"
+// @Param Authorization header string true "Bearer Token. How to input in swagger: Bearer <token>"
 // @Success 200 {object} models.Todo
 // @Failure 400 {object} map[string]interface{}
 // @Failure 401 {object} map[string]interface{}
@@ -148,7 +148,7 @@ func DeleteTodo(c *gin.Context) {
 // @Accept  json
 // @Produce  json
 // @Param id path int true "Todo ID"
-// @Param Authorization header string true "Bearer Token"
+// @Param Authorization header string true "Bearer Token. How to input in swagger: Bearer <token>"
 // @Success 200 {object} models.Todo
 // @Failure 400 {object} map[string]interface{}
 // @Failure 401 {object} map[string]interface{}
@@ -180,7 +180,7 @@ func GetTodoById(c *gin.Context) {
 // @Tags todos
 // @Accept  json
 // @Produce  json
-// @Param Authorization header string true "Bearer Token"
+// @Param Authorization header string true "Bearer Token. How to input in swagger: Bearer <token>"
 // @Success 200 {object} []models.Todo
 // @Failure 400 {object} map[string]interface{}
 // @Failure 401 {object} map[string]interface{}
@@ -211,7 +211,7 @@ func GetUncompletedTodos(c *gin.Context) {
 // @Tags todos
 // @Accept  json
 // @Produce  json
-// @Param Authorization header string true "Bearer Token"
+// @Param Authorization header string true "Bearer Token. How to input in swagger: Bearer <token>"
 // @Success 200 {object} []models.Todo
 // @Failure 400 {object} map[string]interface{}
 // @Failure 401 {object} map[string]interface{}

@@ -22,6 +22,7 @@ func main() {
 	}
 
 	description := "This is a simple todo list.\n\n" +
+		"To get Bearer Token, first you need to register then login.\n\n" +
 		"Checkout my Github: https://github.com/MicBun\n\n" +
 		"Checkout my Linkedin: https://www.linkedin.com/in/MicBun\n\n"
 

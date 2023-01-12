@@ -9,7 +9,7 @@ import (
 )
 
 func ConnectDataBase() *gorm.DB {
-	dbConnection := utils.GetEnv("DB_CONNECTION", "postgres")
+	dbConnection := utils.GetEnv("DB_CONNECTION", "mysql")
 	var db *gorm.DB
 	var err error
 	if dbConnection == "postgres" {
